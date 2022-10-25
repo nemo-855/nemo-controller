@@ -18,4 +18,3 @@ class ControllerRepositoryImpl @Inject constructor() : ControllerRepository {
         }
     }
 }
-

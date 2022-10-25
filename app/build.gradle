@@ -42,6 +42,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    def activity_version = "1.6.1"
+    implementation "androidx.activity:activity-ktx:$activity_version"
+
     // for dagger-hilt
     def hiltVersion = "2.44"
     implementation "com.google.dagger:hilt-android:${hiltVersion}"

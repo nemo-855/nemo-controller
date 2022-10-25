@@ -8,4 +8,10 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(
     private val controllerRepository: ControllerRepository
-) : ViewModel()
+) : ViewModel() {
+    fun getControllers() {
+        controllerRepository.getControllers().map {
+            it.name
+        }
+    }
+}
