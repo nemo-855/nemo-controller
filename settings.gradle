@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Macroid"
-include ':app'
+include ':nemontroller'
