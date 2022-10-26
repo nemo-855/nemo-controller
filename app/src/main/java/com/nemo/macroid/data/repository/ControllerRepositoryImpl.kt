@@ -4,8 +4,9 @@ import android.view.InputDevice
 import android.view.InputDevice.SOURCE_GAMEPAD
 import android.view.InputDevice.SOURCE_JOYSTICK
 import com.nemo.macroid.data.domain.Controller
+import javax.inject.Inject
 
-class ControllerRepositoryImpl : ControllerRepository {
+class ControllerRepositoryImpl @Inject constructor() : ControllerRepository {
     override fun getControllers(): List<Controller> {
         return InputDevice.getDeviceIds().map { deviceId ->
             val inputDevice = InputDevice.getDevice(deviceId)
@@ -17,3 +18,4 @@ class ControllerRepositoryImpl : ControllerRepository {
         }
     }
 }
+
