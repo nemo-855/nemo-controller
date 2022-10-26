@@ -1,4 +1,4 @@
-package com.nemo.macroid.ui
+package com.nemo.nemocontroller.ui
 
 import android.view.KeyEvent
 import android.view.MotionEvent

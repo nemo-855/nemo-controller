@@ -1,9 +1,9 @@
-package com.nemo.macroid.data.repository
+package com.nemo.nemocontroller.data.repository
 
 import android.view.InputDevice
 import android.view.InputDevice.SOURCE_GAMEPAD
 import android.view.InputDevice.SOURCE_JOYSTICK
-import com.nemo.macroid.data.domain.Controller
+import com.nemo.nemocontroller.data.domain.Controller
 import javax.inject.Inject
 
 internal class ControllerRepositoryImpl @Inject constructor() : ControllerRepository {

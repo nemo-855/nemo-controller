@@ -1,7 +1,7 @@
-package com.nemo.macroid.data.service
+package com.nemo.nemocontroller.data.service
 
-import com.nemo.macroid.data.domain.Controller
-import com.nemo.macroid.data.repository.ControllerRepository
+import com.nemo.nemocontroller.data.domain.Controller
+import com.nemo.nemocontroller.data.repository.ControllerRepository
 
 internal class ControllerServiceImpl (
     private val controllerRepository: ControllerRepository

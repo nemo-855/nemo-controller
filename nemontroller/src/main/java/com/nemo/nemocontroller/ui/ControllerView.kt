@@ -1,13 +1,13 @@
-package com.nemo.macroid.ui
+package com.nemo.nemocontroller.ui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View
-import com.nemo.macroid.data.service.ControllerService
-import com.nemo.macroid.di.getControllerService
-import com.nemo.macroid.util.activityOrNull
+import com.nemo.nemocontroller.data.service.ControllerService
+import com.nemo.nemocontroller.di.getControllerService
+import com.nemo.nemocontroller.util.activityOrNull
 
 class ControllerView(
     context: Context,

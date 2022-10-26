@@ -1,4 +1,4 @@
-package com.nemo.macroid.util
+package com.nemo.nemocontroller.util
 
 import android.app.Activity
 import android.content.Context

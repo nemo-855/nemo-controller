@@ -1,4 +1,4 @@
-package com.nemo.macroid.data.domain
+package com.nemo.nemocontroller.data.domain
 
 internal enum class Controller {
     GamePad,
