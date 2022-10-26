@@ -1,4 +1,4 @@
-package com.nemo.macroid
+package com.nemo.nemocontroller
 
 import org.junit.Test
 
