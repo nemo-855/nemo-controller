@@ -6,15 +6,15 @@ import android.view.InputDevice.SOURCE_JOYSTICK
 import com.nemo.macroid.data.domain.Controller
 import javax.inject.Inject
 
-class ControllerRepositoryImpl @Inject constructor() : ControllerRepository {
+internal class ControllerRepositoryImpl @Inject constructor() : ControllerRepository {
     override fun getControllers(): List<Controller> {
-        return InputDevice.getDeviceIds().map { deviceId ->
+        return InputDevice.getDeviceIds().asSequence().mapNotNull { deviceId ->
             val inputDevice = InputDevice.getDevice(deviceId)
             when {
                 inputDevice.sources and SOURCE_GAMEPAD == SOURCE_GAMEPAD -> Controller.GamePad
                 inputDevice.sources and SOURCE_JOYSTICK == SOURCE_JOYSTICK -> Controller.JoyStick
-                else -> Controller.Else
+                else -> null
             }
-        }
+        }.toList()
     }
 }

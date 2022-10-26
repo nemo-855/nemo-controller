@@ -1,7 +1,7 @@
-package com.nemo.macroid.data.repository
+package com.nemo.macroid.data.service
 
 import com.nemo.macroid.data.domain.Controller
 
-interface ControllerRepository {
+internal interface ControllerService {
     fun getControllers(): List<Controller>
 }
